@@ -13,37 +13,45 @@ function controls(e) {
 }
 
 function jump() {
-    if(!character.classList == "jump"){return}
+    if (!character.classList == "jump") { return }
     character.classList.add("jump");
-    setTimeout(function(){
+    setTimeout(function () {
         character.classList.remove("jump");
     }, 700);
 }
 
-function createObstacles () {
+function createObstacles() {
     let randomNumber = Math.random() * 6000;
     const obstacleCreation = document.createElement('div');
     obstacleCreation.classList.add('obstacle');
     gameArea.appendChild(obstacleCreation);
-    let obstacleRight = -76
+    let obstacleRight = parseInt(window.getComputedStyle(obstacleCreation).getPropertyValue("right"));
 
     obstacleMover()
 
-    function obstacleMover() {    
-        setInterval(function(){
+    function obstacleMover() {
+        setInterval(function () {
             obstacleRight += 1
             obstacleCreation.style.right = obstacleRight + 'px'
+
+            let screenwidth = window.screen.width
+            let percentage = Math.floor((obstacleRight*100)/screenwidth)
+            console.log(percentage)
+            let characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
+            if (percentage > 94 && percentage < 99 && characterTop >= 240) {
+            alert("Game Over. score: " + score.innerText)
+            }
         }, 0.5)
 
         setTimeout(createObstacles, randomNumber)
-        if (obstacleCreation.style.right == '500px')  {
+        if (obstacleCreation.style.right == '500px') {
             gameArea.appendChild(obstacleCreation);
         }
     }
 }
 
-createObstacles ()
+createObstacles()
 
 setInterval(() => {
     score.innerText++;
-  }, 50);
+}, 50);

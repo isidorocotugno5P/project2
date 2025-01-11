@@ -39,7 +39,7 @@
   height: 75px;
   width: 40px;
   top: 245px;
-  left: 20%;
+  aspect-ratio: auto;
   position: relative;
   background-image: url("../images/character.png");
   background-size: cover;
