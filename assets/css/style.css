@@ -4,7 +4,7 @@
 
 @keyframes forward {
   from {
-    background-position: 20000%;
+    background-position: 11150%;
   }
   to {
     background-position: 0%;
@@ -38,22 +38,22 @@
 #character {
   height: 75px;
   width: 40px;
-  top: 240px;
+  top: 245px;
   left: 20%;
   position: relative;
   background-image: url("../images/character.png");
   background-size: cover;
+  z-index: 1;
 }
-  
-#obstacle {
+
+.obstacle {
   background-image: url("../images/obstacle.png");
   background-repeat: no-repeat;
   width: 76px;
   height: 61px;
-  position: relative;
-  top: 170px;
-  left: 96%;
-  animation: obstacle 5s infinite linear;
+  position: absolute;
+  top: 249px;
+  right: -76px;
 }
 
 @keyframes obstacle{
