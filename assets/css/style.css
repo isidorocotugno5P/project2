@@ -24,14 +24,15 @@
 }
 
 @keyframes jump {
-  0%{top: 1000px;}
-  50%{top: 75px;}
-  75%{top: 75px;}
-  100%{top: 1000px;}
+  0%{top: 240px;}
+  25%{top: 180px;}
+  50%{top: 150px}
+  75%{top: 180px;}
+  100%{top: 240px;}
 }
 
 .jump {
-  animation: jump 0.3 linear;
+  animation: jump 700ms linear;
 }
 
 #character {
@@ -40,8 +41,6 @@
   top: 240px;
   left: 20%;
   position: relative;
-  display: flex;
-  justify-content: center;
   background-image: url("../images/character.png");
   background-size: cover;
 }
