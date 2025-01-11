@@ -1,7 +1,6 @@
 
 const gameArea = document.getElementById("game-area");
 const character = document.getElementById("character");
-// const obstacle = document.getElementById("obstacle");
 const score = document.getElementById("score");
 document.addEventListener('keydown', controls);
 let characterPosition = 0
@@ -33,13 +32,12 @@ function createObstacles() {
         setInterval(function () {
             obstacleRight += 1
             obstacleCreation.style.right = obstacleRight + 'px'
-
+            let characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
             let screenwidth = window.screen.width
             let percentage = Math.floor((obstacleRight*100)/screenwidth)
             console.log(percentage)
-            let characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
             if (percentage > 94 && percentage < 99 && characterTop >= 240) {
-            alert("Game Over. score: " + score.innerText)
+            alert("Game Over. score: " + score.innerText);
             }
         }, 0.5)
 
