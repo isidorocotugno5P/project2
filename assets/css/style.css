@@ -1,6 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
 .blackout {
   background-color: black;
 }
+
+.text {
+  margin-top: 50px;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+#start {
+  height: 200px;
+  width: 400px;
+  background: #f9e4bc;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  font-family: 'Pixelify Sans';
+  border: 10px double #ffa202c3
+}
+
+.end {
+    height: 200px;
+    width: 400px;
+    background: #f9e4bc;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+    font-family: 'Pixelify Sans';
+    border: 10px double #ffa202c3
+  }
 
 @keyframes forward {
   from {
@@ -8,7 +46,7 @@
   }
   to {
     background-position: 0%;
-  }
+  } 
 }
 
 #game-area {

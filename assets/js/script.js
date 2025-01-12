@@ -2,11 +2,15 @@
 const gameArea = document.getElementById("game-area");
 const character = document.getElementById("character");
 const score = document.getElementById("score");
+let result = document.getElementById("result");
+const start = document.getElementById("start");
+const endGame = document.getElementById("end-game");
 document.addEventListener('keydown', controls);
-let characterPosition = 0
+let characterPosition = 0;
 
 function controls(e) {
     if (e.code === 'Space') {
+        start.classList.add('hide')
         jump();
     }
 }
@@ -37,7 +41,9 @@ function createObstacles() {
             let percentage = Math.floor((obstacleRight*100)/screenwidth)
             console.log(percentage)
             if (percentage > 94 && percentage < 99 && characterTop >= 240) {
-            alert("Game Over. score: " + score.innerText);
+            // alert("Game Over. score: " + score.innerText);
+            endGame.classList.add('end')
+            result.innerText = score.innerText
             }
         }, 0.5)
 
