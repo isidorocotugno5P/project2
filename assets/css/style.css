@@ -122,6 +122,6 @@
 
 #score {
   color: black;
-  position: relative;
-  top: 15.5rem;
+  position: absolute;
+  top:255px;
 }
