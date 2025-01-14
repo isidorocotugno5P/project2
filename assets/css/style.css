@@ -19,7 +19,7 @@
   text-decoration: underline;
   margin-top: 20px;
   font-size: 200px;
-  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-width: 5px;
   -webkit-text-stroke-color: orange;
 }
 
@@ -38,17 +38,17 @@
 }
 
 .end {
-    height: 200px;
-    width: 400px;
-    background: #f9e4bc;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    text-align: center;
-    font-family: 'Pixelify Sans';
-    border: 10px double #ffa202c3
+  height: 200px;
+  width: 400px;
+  background: #f9e4bc;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  font-family: 'Pixelify Sans';
+  border: 10px double #ffa202c3
   }
 
 @keyframes forward {
