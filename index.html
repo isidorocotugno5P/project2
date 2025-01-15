@@ -22,7 +22,11 @@
         <p>Your score is</p>
         <p id="result"></p>
     </div>
-    <audio id="music" src="assets/music/pixel-music.mp3" type="audio/mp3"></audio>
+    <div>
+        <img id="speaker" src="assets/images/mute.png" alt="png of a speaker playing audio" onclick="toggleSound()">
+        <audio id="music" src="assets/music/pixel-music.mp3" loop></audio>
+    </div>
+    
     <script src="assets/js/script.js"></script>
 </body>
 </html>

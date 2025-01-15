@@ -64,3 +64,17 @@ createObstacles()
 setInterval(() => {
     score.innerText++;
 }, 50);
+
+const music = document.getElementById('music');
+
+function toggleSound() {
+    let sound = document.getElementById('speaker').src;
+    if (sound.indexOf('mute.png')!=-1) {
+        document.getElementById('speaker').src  = 'assets/images/sound.png';
+        music.play()
+    }
+     else {
+       document.getElementById('speaker').src = 'assets/images/mute.png';
+       music.pause()
+   }
+}

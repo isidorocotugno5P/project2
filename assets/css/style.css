@@ -120,6 +120,12 @@
   100%{left: -5%}
 }
 
+#speaker {
+  top: 275px;
+  right: 5px;
+  position: absolute;
+}
+
 #score {
   color: black;
   position: absolute;
