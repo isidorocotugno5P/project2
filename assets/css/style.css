@@ -49,15 +49,16 @@
   text-align: center;
   font-family: 'Pixelify Sans';
   border: 10px double #ffa202c3
-  }
+}
 
 @keyframes forward {
   from {
     background-position: 11150%;
   }
+
   to {
     background-position: 0%;
-  } 
+  }
 }
 
 #game-area {
@@ -73,17 +74,52 @@
 }
 
 @keyframes jump-animation {
-  from {background-position: 0px;}
-  to {background-position: -910px;}
-  0%{top: 200px;}
-  25%{top: 150px;}
-  50%{top: 100px;}
-  75%{top: 150px;}
-  100%{top: 200px;}
+  from {
+    background-position: 0px;
+  }
+
+  to {
+    background-position: -910px;
+  }
+
+  0% {
+    top: 200px;
+  }
+
+  25% {
+    top: 150px;
+  }
+
+  50% {
+    top: 100px;
+  }
+
+  75% {
+    top: 150px;
+  }
+
+  100% {
+    top: 200px;
+  }
+}
+
+@keyframes walk-animation {
+  from {
+    background-position: 0px;
+  }
+
+  to {
+    background-position: -780px;
+  }
+}
+
+.death {
+  animation: death-animation 0.7s steps(9) infinite;
+  background-image: url("../images/character-death-spritesheet.png");
 }
 
 .jump {
-  animation: jump-animation 0.7s steps(7) infinite; 
+  animation: jump-animation 0.7s steps(7) infinite;
   background-image: url("../images/character-jump-spritesheet.png");
 }
 
@@ -101,8 +137,13 @@
 }
 
 @keyframes walk-animation {
-  from {background-position: 0px;}
-  to {background-position: -780px;}
+  from {
+    background-position: 0px;
+  }
+
+  to {
+    background-position: -780px;
+  }
 }
 
 .obstacle {
@@ -115,9 +156,14 @@
   right: -76px;
 }
 
-@keyframes obstacle{
-  0%{left: 100%}
-  100%{left: -5%}
+@keyframes obstacle {
+  0% {
+    left: 100%
+  }
+
+  100% {
+    left: -5%
+  }
 }
 
 #speaker {
@@ -129,5 +175,33 @@
 #score {
   color: black;
   position: absolute;
-  top:255px;
+  top: 255px;
 }
+
+@media only screen 
+  and (max-device-width: 932px)
+  and (max-device-height: 430px)
+  and (orientation: landscape) {
+
+  .game-title {
+    visibility: hidden;
+  }
+
+  .blackout {
+    max-width: 932px;
+    height: 430px;
+    overflow: hidden;
+  }
+
+  #game-area {
+    margin: auto;
+  }
+}
+
+@media only screen 
+  and (min-device-width: 1024px) {
+    .game-title {
+      font-size: 100px;
+      margin-top: 50px;
+    }
+  }

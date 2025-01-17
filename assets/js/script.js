@@ -45,7 +45,7 @@ function createObstacles() {
             let percentage = Math.floor((obstacleRight * 100) / screenwidth);
             // console.log(percentage);
             if (percentage > 94 && percentage < 99 && characterTop >= 200) {
-                alert("Game Over. score: " + score.innerText);
+                // alert("Game Over. score: " + score.innerText);
                 endGame.classList.add('end');
                 document.getElementById("result").style.fontSize = "xx-large";
                 result.innerText = score.innerText;
