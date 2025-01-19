@@ -7,12 +7,22 @@ const endGame = document.getElementById("end-game");
 const title = document.getElementById("game-title");
 document.addEventListener('keydown', controls);
 let characterPosition = 0;
+const music = document.getElementById('music');
+let startNumber = 0;
 
 function controls(e) {
     if (e.code === 'Space') {
         start.classList.add('hide');
         character.classList.remove('walk');
         jump();
+        startNumber++;
+    }
+
+    if (startNumber === 1) {
+        createObstacles();
+        setInterval(() => {
+            score.innerText++;
+        }, 50);
     }
 }
 
@@ -28,7 +38,11 @@ function jump() {
 }
 
 function createObstacles() {
-    let randomNumber = Math.random() * 6000;
+    let randomNumber = Math.random() * 5000;
+    do {
+        randomNumber = Math.random() * 5000;
+    }
+    while (randomNumber < 1500)
     const obstacleCreation = document.createElement('div');
     obstacleCreation.classList.add('obstacle');
     gameArea.appendChild(obstacleCreation);
@@ -56,16 +70,15 @@ function createObstacles() {
         if (obstacleCreation.style.right == '500px') {
             gameArea.appendChild(obstacleCreation);
         }
+
+        setInterval (() => {
+            if (obstacleRight > 3000) {
+                // obstacleCreation.parentNode.removeChild(obstacleCreation);
+                gameArea.removeChild(obstacleCreation);
+            }
+        }, 1000)
     }
 }
-
-createObstacles()
-
-setInterval(() => {
-    score.innerText++;
-}, 50);
-
-const music = document.getElementById('music');
 
 function toggleSound() {
     let sound = document.getElementById('speaker').src;
