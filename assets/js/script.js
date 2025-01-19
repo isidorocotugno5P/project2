@@ -63,6 +63,7 @@ function createObstacles() {
                 endGame.classList.add('end');
                 document.getElementById("result").style.fontSize = "xx-large";
                 result.innerText = score.innerText;
+                gameArea.removeChild(gameArea.lastChild);
             }
         }, 0.5);
 
