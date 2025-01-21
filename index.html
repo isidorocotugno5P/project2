@@ -13,19 +13,20 @@
         <p>In order to play press <strong>space</strong> or <strong>"Start!"</strong> on touchscreen devices.</p>
         <p>Press <strong>space</strong> or <strong>"Jump"</strong> on touchscreen devices to jump.</p>
         <p>Get as far as you can by jumping over the deadly crystals. Good luck!</p>
-        <button id="start-button">Start!</button>
+        <button id="start-button" class="btn">Start!</button>
     </div>
 <div id="game-area">
     <div id="character" class="walk"></div>
-    <button id="jump-button">Jump</button>
+    <button id="jump-button" class="btn">Jump</button>
 </div>
     <h3 id="score">0</h3>
     <div id="end-game">
         <h4 class="text">Game Over!</h4>
         <p>Your score is</p>
         <p id="result"></p>
-        <button id="replay-button">Try again!</button>
+        <button id="replay-button" class="btn">Try again!</button>
     </div>
+    <div id="portrait-block" class="text">We are sorry but to play this game please use your device in landscape mode.</div>
     <div>
         <img id="speaker" src="assets/images/mute.png" alt="png of a speaker playing audio" onclick="toggleSound()">
         <audio id="music" src="assets/music/pixel-music.mp3" loop></audio>
