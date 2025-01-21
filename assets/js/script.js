@@ -9,6 +9,9 @@ document.addEventListener('keydown', controls);
 let characterPosition = 0;
 const music = document.getElementById('music');
 let startNumber = 0;
+const startButton = document.getElementById('start-button')
+const jumpButton = document.getElementById('jump-button')
+const replayButton = document.getElementById('replay-button')
 
 function controls(e) {
     if (e.code === 'Space') {
@@ -25,6 +28,32 @@ function controls(e) {
         }, 50);
     }
 }
+
+startButton.addEventListener("click", () => {
+        start.classList.add('hide');
+        character.classList.remove('walk');
+        jump();
+        startNumber++;
+
+    if (startNumber === 1) {
+        createObstacles();
+        setInterval(() => {
+            score.innerText++;
+        }, 50);
+    }
+});
+
+replayButton.addEventListener("click", () => {
+    location.reload();
+});
+
+jumpButton.addEventListener("click", () => {
+    start.classList.add('hide');
+    character.classList.remove('walk');
+    jump();
+});
+
+
 
 function jump() {
     if (!character.classList == "jump") {
@@ -55,10 +84,10 @@ function createObstacles() {
             obstacleRight += 1;
             obstacleCreation.style.right = obstacleRight + 'px';
             let characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
-            let screenwidth = window.screen.width;
+            let screenwidth = window.innerWidth;
             let percentage = Math.floor((obstacleRight * 100) / screenwidth);
             // console.log(percentage);
-            if (percentage > 94 && percentage < 99 && characterTop >= 200) {
+            if (percentage > 94 && percentage < 97 && characterTop >= 200) {
                 // alert("Game Over. score: " + score.innerText);
                 endGame.classList.add('end');
                 document.getElementById("result").style.fontSize = "xx-large";

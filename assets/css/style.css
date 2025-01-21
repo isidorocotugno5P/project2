@@ -34,7 +34,8 @@
   z-index: 2;
   text-align: center;
   font-family: 'Pixelify Sans';
-  border: 10px double #ffa202c3
+  border: 10px double #ffa202c3;
+  font-size: xx-large;
 }
 
 .end {
@@ -48,7 +49,8 @@
   z-index: 2;
   text-align: center;
   font-family: 'Pixelify Sans';
-  border: 10px double #ffa202c3
+  border: 10px double #ffa202c3;
+  font-size: xx-large;
 }
 
 @keyframes forward {
@@ -113,11 +115,6 @@
   }
 }
 
-.death {
-  animation: death-animation 0.7s steps(9) infinite;
-  background-image: url("../images/character-death-spritesheet.png");
-}
-
 .jump {
   animation: jump-animation 0.7s steps(7) infinite;
   background-image: url("../images/character-jump-spritesheet.png");
@@ -170,6 +167,7 @@
   top: 275px;
   right: 5px;
   position: absolute;
+  z-index: 3;
 }
 
 #score {
