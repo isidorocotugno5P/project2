@@ -24,7 +24,7 @@
 }
 
 #start {
-  height: 90%;
+  height: 95%;
   width: 100%;
   background: #f9e4bc;
   position: absolute;
@@ -39,7 +39,7 @@
 }
 
 .end {
-  height: 90%;
+  height: 95%;
   width: 100%;
   background: #f9e4bc;
   position: absolute;
@@ -214,23 +214,12 @@
   top: 255px;
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1023px) {
     
   .game-title {
     display: none;
   }
-
-  #game-area {
-    margin: auto;
-  }
 }
-  
-  @media only screen 
-  and (min-device-width: 1400px) {
-    .text {
-      font-size: xxx-large;
-    }
-  }
 
 @media screen and (orientation:landscape) {
   #portrait-block {
@@ -292,16 +281,16 @@
 
 @media screen and (min-device-width: 1200px) {
   #speaker {
-    top: 300px;
+    top: 360px;
   }
 
   #score {
-    top: 280px;
+    top: 340px;
   }
 
   .game-title {
-    margin-top: 40px!important;
-    font-size: 900%;
+    margin-top: 0px!important;
+    font-size: 700%;
   }
 }
 
@@ -312,5 +301,9 @@
 
   #score {
     top: 330px;
+  }
+
+  .text {
+    font-size: xxx-large;
   }
 }

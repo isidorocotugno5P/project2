@@ -22,7 +22,7 @@ function controls(e) {
     }
 
     if (startNumber === 1) {
-        // createObstacles();
+        createObstacles();
         setInterval(() => {
             score.innerText++;
         }, 50);
@@ -85,11 +85,27 @@ function createObstacles() {
             obstacleCreation.style.right = obstacleRight + 'px';
             let characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
             let screenwidth = window.innerWidth;
+            let screensize = getScreenSize();
             let percentage = Math.floor((obstacleRight * 100) / screenwidth);
-            //  console.log(percentage);
-            if (percentage > 94 && percentage < 97 && characterTop >= 200) {
-                // alert("Game Over. score: " + score.innerText);
+            console.log(percentage);
+            if (screensize === 'xl' && percentage > 90 && percentage < 95 && characterTop >= 160) {
                 endGame.classList.add('end');
+                document.getElementById("result").style.fontSize = "xx-large";
+                result.innerText = score.innerText;
+                gameArea.removeChild(gameArea.lastChild);
+            } else if (screensize === 'lg' && percentage > 86 && percentage < 91 && characterTop >= 160){
+                endGame.classList.add('end');
+                document.getElementById("result").style.fontSize = "xx-large";
+                result.innerText = score.innerText;
+                gameArea.removeChild(gameArea.lastChild);
+            } else if (screensize === 'md' && percentage > 84 && percentage < 89 && characterTop >= 160){
+                endGame.classList.add('end');
+                document.getElementById("result").style.fontSize = "xx-large";
+                result.innerText = score.innerText;
+                gameArea.removeChild(gameArea.lastChild);
+            } else if (screensize === 'sm' && percentage > 80 && percentage < 84 && characterTop >= 160){
+                endGame.classList.add('end');
+                alert("Game Over. score: " + score.innerText);
                 document.getElementById("result").style.fontSize = "xx-large";
                 result.innerText = score.innerText;
                 gameArea.removeChild(gameArea.lastChild);
@@ -107,6 +123,23 @@ function createObstacles() {
                 gameArea.removeChild(obstacleCreation);
             }
         }, 1000)
+    }
+}
+
+function getScreenSize() {
+    
+    const width = window.innerWidth;
+
+    if (width < 576) {
+        return 'xs'; 
+    } else if (width >= 576 && width < 768) {
+        return 'sm'; 
+    } else if (width >= 768 && width < 992) {
+        return 'md'; 
+    } else if (width >= 992 && width < 1200) {
+        return 'lg'; 
+    } else {
+        return 'xl';
     }
 }
 
