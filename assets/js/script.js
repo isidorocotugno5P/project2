@@ -22,7 +22,7 @@ function controls(e) {
     }
 
     if (startNumber === 1) {
-        createObstacles();
+        // createObstacles();
         setInterval(() => {
             score.innerText++;
         }, 50);
