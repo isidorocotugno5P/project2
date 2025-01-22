@@ -105,7 +105,6 @@ function createObstacles() {
                 gameArea.removeChild(gameArea.lastChild);
             } else if (screensize === 'sm' && percentage > 80 && percentage < 84 && characterTop >= 160){
                 endGame.classList.add('end');
-                alert("Game Over. score: " + score.innerText);
                 document.getElementById("result").style.fontSize = "xx-large";
                 result.innerText = score.innerText;
                 gameArea.removeChild(gameArea.lastChild);
