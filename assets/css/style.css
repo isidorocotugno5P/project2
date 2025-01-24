@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
 
+/* Global Styles */
+
 .blackout {
   background-color: black;
 }
@@ -27,21 +29,6 @@
   margin-block-start: 0px!important;
 }
 
-#start {
-  height: 95%;
-  width: 100%;
-  background: #f9e4bc;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  text-align: center;
-  font-family: 'Pixelify Sans';
-  border: 10px double #ffa202c3;
-  font-size: x-large;
-}
-
 .end {
   height: 95%;
   width: 100%;
@@ -55,6 +42,28 @@
   font-family: 'Pixelify Sans';
   border: 10px double #ffa202c3;
   font-size: xx-large;
+}
+
+.text-block {
+  margin-top: 25%;
+  width: 50%;
+  margin-left: 25%;
+  font-size: xx-large;
+}
+
+#start {
+  height: 95%;
+  width: 100%;
+  background: #f9e4bc;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  font-family: 'Pixelify Sans';
+  border: 10px double #ffa202c3;
+  font-size: x-large;
 }
 
 #portrait-block {
@@ -72,12 +81,7 @@
   z-index: 3;
 }
 
-.text-block {
-  margin-top: 25%;
-  width: 50%;
-  margin-left: 25%;
-  font-size: xx-large;
-}
+/* Button Styles */
 
 .btn {
   font-family: 'Pixelify Sans';
@@ -95,15 +99,7 @@
   left: 90%;
 }
 
-@keyframes forward {
-  from {
-    background-position: 11150%;
-  }
-
-  to {
-    background-position: 0%;
-  }
-}
+/* Game Area Styles and Animations */
 
 #game-area {
   width: 100%;
@@ -115,6 +111,23 @@
   left: 50%;
   transform: translate(-50%, -50%);
   animation: forward 600s infinite linear;
+}
+
+@keyframes forward {
+  from {
+    background-position: 11150%;
+  }
+
+  to {
+    background-position: 0%;
+  }
+}
+
+/* Character Styles and Animations */
+
+.jump {
+  animation: jump-animation 0.7s steps(7) infinite;
+  background-image: url("../images/character-jump-spritesheet.png");
 }
 
 @keyframes jump-animation {
@@ -147,29 +160,6 @@
   }
 }
 
-@keyframes walk-animation {
-  from {
-    background-position: 0px;
-  }
-
-  to {
-    background-position: -780px;
-  }
-}
-
-.jump {
-  animation: jump-animation 0.7s steps(7) infinite;
-  background-image: url("../images/character-jump-spritesheet.png");
-}
-
-#character {
-  height: 130px;
-  width: 130px;
-  top: 200px;
-  position: absolute;
-  z-index: 1;
-}
-
 .walk {
   background-image: url("../images/character-walk-spritesheet.png");
   animation: walk-animation 0.7s steps(6) infinite;
@@ -184,6 +174,16 @@
     background-position: -780px;
   }
 }
+
+#character {
+  height: 130px;
+  width: 130px;
+  top: 200px;
+  position: absolute;
+  z-index: 1;
+}
+
+/* Obstacle Styles and Animations */
 
 .obstacle {
   background-image: url("../images/obstacle.png");
@@ -205,6 +205,8 @@
   }
 }
 
+/* Score and Speaker Styles */
+
 #speaker {
   top: 275px;
   right: 5px;
@@ -218,6 +220,10 @@
   top: 255px;
 }
 
+/* Media Queries */
+
+/* Media Query for removed Game Title up until 1023px */
+
 @media screen and (max-width:1023px) {
     
   .game-title {
@@ -225,13 +231,17 @@
   }
 }
 
+/* Media Query for removal of portrait orientation screen blocker */
+
 @media screen and (orientation:landscape) {
   #portrait-block {
     display: none;
     }
 }
 
-@media screen and (min-device-width: 0px) {
+/* Media Query for speaker and score style for extra small and small screens */
+
+@media screen and (min-width: 0px) {
   #speaker {
     top: 30px;
   }
@@ -241,7 +251,9 @@
   }
 }
 
-@media screen and (min-device-width: 768px) {
+/* Media Query for speaker and score style for medium screens */
+
+@media screen and (min-width: 768px) {
   #speaker {
     top: 55px;
   }
@@ -251,7 +263,14 @@
   }
 }
 
-@media screen and (min-device-width: 992px) {
+/* Media Query for speaker, game title and score style for large screens */
+
+@media screen and (min-width: 992px) {
+
+  .game-title {
+    margin-top: 50px!important;
+  }
+
   #speaker {
     top: 230px;
   }
@@ -259,20 +278,11 @@
   #score {
     top: 210px;
   }
-
-  .game-title {
-    margin-top: 50px!important;
-  }
 }
 
-@media screen and (min-device-width: 1024px) {
-  #speaker {
-    top: 255px;
-  }
+/* Media Query for speaker, text, game title and score style for slightly larger than medium screens */
 
-  #score {
-    top: 230px;
-  }
+@media screen and (min-width: 1024px) {
 
   .text {
     font-size: xx-large;
@@ -281,9 +291,25 @@
   .game-title {
     margin-top: 10px!important;
   }
+
+  #speaker {
+    top: 255px;
+  }
+
+  #score {
+    top: 230px;
+  }
 }
 
-@media screen and (min-device-width: 1200px) {
+/* Media Query for speaker, game title and score style for x-large screens */
+
+@media screen and (min-width: 1200px) {
+
+  .game-title {
+    margin-top: 0px!important;
+    font-size: 700%;
+  }
+
   #speaker {
     top: 360px;
   }
@@ -291,23 +317,21 @@
   #score {
     top: 340px;
   }
-
-  .game-title {
-    margin-top: 0px!important;
-    font-size: 700%;
-  }
 }
 
-@media screen and (min-device-width: 1400px) {
+/* Media Query for speaker, text and score style for xx-large screens */
+
+@media screen and (min-width: 1400px) {
+
+  .text {
+    font-size: xxx-large;
+  }
+  
   #speaker {
     top: 350px;
   }
 
   #score {
     top: 330px;
-  }
-
-  .text {
-    font-size: xxx-large;
   }
 }

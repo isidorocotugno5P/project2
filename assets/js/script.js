@@ -4,14 +4,12 @@ const score = document.getElementById("score");
 let result = document.getElementById("result");
 const start = document.getElementById("start");
 const endGame = document.getElementById("end-game");
-const title = document.getElementById("game-title");
 document.addEventListener('keydown', controls);
-let characterPosition = 0;
 const music = document.getElementById('music');
 let startNumber = 0;
-const startButton = document.getElementById('start-button')
-const jumpButton = document.getElementById('jump-button')
-const replayButton = document.getElementById('replay-button')
+const startButton = document.getElementById('start-button');
+const jumpButton = document.getElementById('jump-button');
+const replayButton = document.getElementById('replay-button');
 
 function controls(e) {
     if (e.code === 'Space') {
@@ -71,13 +69,13 @@ function createObstacles() {
     do {
         randomNumber = Math.random() * 5000;
     }
-    while (randomNumber < 1500)
+    while (randomNumber < 1500);
     const obstacleCreation = document.createElement('div');
     obstacleCreation.classList.add('obstacle');
     gameArea.appendChild(obstacleCreation);
     let obstacleRight = parseInt(window.getComputedStyle(obstacleCreation).getPropertyValue("right"));
 
-    obstacleMover()
+    obstacleMover();
 
     function obstacleMover() {
         setInterval(() => {
@@ -111,7 +109,7 @@ function createObstacles() {
             }
         }, 0.5);
 
-        setTimeout(createObstacles, randomNumber)
+        setTimeout(createObstacles, randomNumber);
         if (obstacleCreation.style.right == '500px') {
             gameArea.appendChild(obstacleCreation);
         }
@@ -121,7 +119,7 @@ function createObstacles() {
                 // obstacleCreation.parentNode.removeChild(obstacleCreation);
                 gameArea.removeChild(obstacleCreation);
             }
-        }, 1000)
+        }, 1000);
     }
 }
 
@@ -146,10 +144,10 @@ function toggleSound() {
     let sound = document.getElementById('speaker').src;
     if (sound.indexOf('mute.png')!=-1) {
         document.getElementById('speaker').src  = 'assets/images/sound.png';
-        music.play()
+        music.play();
     }
      else {
        document.getElementById('speaker').src = 'assets/images/mute.png';
-       music.pause()
+       music.pause();
    }
 }

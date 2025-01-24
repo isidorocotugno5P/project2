@@ -1,6 +1,8 @@
 # Rooftop Jumper 2D 8-Bit Resolution Game 
 
-Add introduction 
+Welcome to Rooftop Jumper! A 2D 8-Bit style free online videogame using HTML, CSS, and Javascript for an interactive and responsive user experience. I was born in 1995 and had a bigger sister who was very into videogames, this was my inspiration for the game and the motivation to attempt something more complicated and complex than a simple rock, paper, scissors game or something similar. I grew up playing so many different kinds of 2D games, where all you could typically do was move in 4 directions, jump, duck, and maybe even fire off something or use items. Although I would have loved to incorporate all elements and made a fully completed game with an end goal, and even a background story, with my current knowledge I would have not managed that in the alloted time, so I stuck with the most (not-so-simple) simple functions. 
+
+I must admit this was extremely challenging for me, and I have made way more mistakes in this project which resulted in far more bugs and complications than the last project, but the upside is, I learned more than I ever could have if I stuck with something simple. I hope you enjoy playing the game and are able to see the risk associated with something of this level with my current knowledge. I made sure to test extensively and vigorously to find all bugs I possibly pre and post deployment. 
 
 ![Responsive Mockup](assets/images/mockup.png)
 
@@ -56,7 +58,7 @@ Add picture and description
 
 Below you will find a breakdown of each color and its purpose, as well as their contrast score. 
 
-#### Colors Chose & Purpose
+#### Colors Chosen & Purpose
 
 Add pictures and description
 
@@ -174,7 +176,7 @@ Add credits
 
 ### CSS Validation 
 
-### JShift Validation 
+### JSHint Validation 
 
 ### WebAim - WAVE
 
@@ -183,6 +185,8 @@ Add credits
 #### Game Page 
 
 #### End Game Page 
+
+### Pagespeed
 
 ### General Testing 
 
@@ -198,17 +202,29 @@ Add pictures, procedures, and description
 
 ## Bugs
 
+This game was incredibly difficult for me to code and it took an incredible amount of trial and error. In this section I would like to depict and display the bugs I successfully fixed but also attempt a deep dive into the bugs I could not or did not have time to fix but encountered through vigorous testing. Although some bugs were left unfixed, the testing taught me so much about how deployed websites present their own problems on different devices even if everything seemed fine in Google Devs. It taught me the importance of testing and that there is almost no such thing as too much testing as long as it has purpose. Trying this game out on different devices with different operating systems spiked my curiousity and showed me that long term testing platforms, designs, and code on as many systems and devices I can get my hands on will be crucial to a quality product. 
+
 ### Fixed Bugs 
 
 Add pictures and description
 
 ### Unfixed Bugs 
 
-Add pictures and description
+Add pictures and description, add iOS and devices tested with pictures of screen recording and problem description 
 
 ## Future Features
 
-Add future features 
+1. Adding a double jump feature.
+2. Adding a feature that detects how long you hold down the spacebar and that influences distance jumped, height jumped, or time jumped.
+3. Adding flying obstacles and a ducking feature to create more variety. 
+4. Adding in a death sequence sprite sheet for a death animation. 
+5. Adding in other obstacles, such as monsters, that you can hit or shoot down with an attack animation.
+6. Create a point system that adds points for every monster eliminated. 
+7. Add a super sequence after x goal is reached like in Super Mario when he gets the golden mushroom.
+8. Make game more challenging as time passes by increasing speed or increasing amount of crystals, monsters, obstacles, produced. 
+9. Give the character the ability to move left and right to have more control over positioning.
+10. Add a highscore count holder. 
+11. Add a name input holder.
 
 ## Deployment
 
