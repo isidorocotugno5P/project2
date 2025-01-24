@@ -88,22 +88,22 @@ function createObstacles() {
             let screensize = getScreenSize();
             let percentage = Math.floor((obstacleRight * 100) / screenwidth);
             console.log(percentage);
-            if (screensize === 'xl' && percentage > 90 && percentage < 95 && characterTop >= 160) {
+            if (screensize === 'xl' && percentage >= 91 && percentage <= 95 && characterTop >= 155) {
                 endGame.classList.add('end');
                 document.getElementById("result").style.fontSize = "xx-large";
                 result.innerText = score.innerText;
                 gameArea.removeChild(gameArea.lastChild);
-            } else if (screensize === 'lg' && percentage > 86 && percentage < 91 && characterTop >= 160){
+            } else if (screensize === 'lg' && percentage >= 90 && percentage <= 95 && characterTop >= 155){
                 endGame.classList.add('end');
                 document.getElementById("result").style.fontSize = "xx-large";
                 result.innerText = score.innerText;
                 gameArea.removeChild(gameArea.lastChild);
-            } else if (screensize === 'md' && percentage > 84 && percentage < 89 && characterTop >= 160){
+            } else if (screensize === 'md' && percentage >= 85 && percentage <= 89 && characterTop >= 155){
                 endGame.classList.add('end');
                 document.getElementById("result").style.fontSize = "xx-large";
                 result.innerText = score.innerText;
                 gameArea.removeChild(gameArea.lastChild);
-            } else if (screensize === 'sm' && percentage > 80 && percentage < 84 && characterTop >= 160){
+            } else if (screensize === 'sm' && percentage >= 82 && percentage < 88 && characterTop >= 155){
                 endGame.classList.add('end');
                 document.getElementById("result").style.fontSize = "xx-large";
                 result.innerText = score.innerText;
