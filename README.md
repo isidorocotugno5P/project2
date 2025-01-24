@@ -94,9 +94,9 @@ Add pictures and description
 
     * Styling
 
-3. [Javsascript](https://www.oracle.com/developer/javascript/)
+3. [Javascript](https://www.oracle.com/developer/javascript/)
 
-    * Functions and interactive and responsive design
+    * Functions, interactive and responsive design
 
 ### Libraries 
 
@@ -104,17 +104,21 @@ Add pictures and description
 
     * Font Style     
 
-2. [Font Awesome](https://fontawesome.com/)
+2. [PNGTree](https://www.pngtree.com/)
 
-    * 
+    * For some design elements
 
-3. [Freepik](https://www.freepik.com/)
+3. [PNGMaker](https://pngmaker.ai/)
 
-    *  
+    * For tab icon
 
-4. [PNGTree](https://www.pngtree.com/)
+4. [FlatIcon](https://www.flaticon.com/)
 
-    * 
+    * For on and off speaker png/icon
+
+4. [Music](https://www.youtube.com/watch?app=desktop&v=qWCLauk9oNo&t=0s)
+
+    * Music for gameplay
 
 ### Platforms 
 
@@ -136,23 +140,19 @@ Add pictures and description
 
     * Check contrast of website
 
-3. [Online PNG Tools](https://onlinepngtools.com/change-png-color)
-
-    * Change color of PNG (Font Awesome Icons)
-
-4. [WebAim - Wave](https://wave.webaim.org/)
+3. [WebAim - Wave](https://wave.webaim.org/)
 
     * Test accessibility 
 
-6. [Google Developer - Lighthouse](https://developer.chrome.com/docs/lighthouse)
+4. [Google Developer - Lighthouse](https://developer.chrome.com/docs/lighthouse)
 
     * For testing
 
-7. [Google - Pagespeed](https://pagespeed.web.dev/)
+5. [Google - Pagespeed](https://pagespeed.web.dev/)
 
     * For testing
 
-8.  [W3C Validation Service](https://validator.w3.org/)
+6.  [W3C Validation Service](https://validator.w3.org/)
 
     * For both HTML and CSS validation 
 
@@ -166,27 +166,23 @@ Add credits
 
 #### Mobile 
 
-![Lighthouse Mobile] 
+![Lighthouse Mobile](assets/images/lighthouse-mobile.png)
 
 ##### Desktop
 
-![Lighthouse Desktop]
+![Lighthouse Mobile](assets/images/lighthouse-desktop.png)
 
 ### HTML Validation 
 
+![W3C HTML Validation](assets/images/w3c-html-validation.png)
+
 ### CSS Validation 
+
+![W3C CSS Validation](assets/images/w3c-css-validation.png)
 
 ### JSHint Validation 
 
 ### WebAim - WAVE
-
-#### Landing Page 
-
-#### Game Page 
-
-#### End Game Page 
-
-### Pagespeed
 
 ### General Testing 
 
