@@ -1,131 +1,257 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Rooftop Jumper 2D 8-Bit Resolution Game 
 
-Welcome Isidoro Cotugno,
+Add introduction 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+![Responsive Mockup](assets/images/mockup.png)
 
-You can safely delete this README.md file or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **June 18, 2024**
+[Link to Live Site](https://isidorocotugno5p.github.io/project2/)
 
-## Gitpod Reminders
+## User Stories 
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+### 1. Add user story
 
-`python3 -m http.server`
+### 2. Add user story
 
-A blue button should appear to click: _Make Public_,
+### 3. Add user story
 
-Another blue button should appear to click: _Open Browser_.
+### 4. Add user story
 
-To run a backend Python file, type `python3 app.py` if your Python file is named `app.py`, of course.
+### 5. Add user story
 
-A blue button should appear to click: _Make Public_,
+## Features 
 
-Another blue button should appear to click: _Open Browser_.
+This section will include the features of this videogame project and how they effectively aided in achieving all goals. 
 
-By Default, Gitpod gives you superuser security privileges. Therefore, you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### Landing Screen
 
-To log into the Heroku toolbelt CLI:
+Add pictures and description
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+#### Portrait Orientation and Block Screen
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public, you can create a new one with _Regenerate API Key_.
+Add pictures and description 
 
-### Connecting your Mongo database
+### Game Page
 
-- **Connect to Mongo CLI on a IDE**
-- navigate to your MongoDB Clusters Sandbox
-- click **"Connect"** button
-- select **"Connect with the MongoDB shell"**
-- select **"I have the mongo shell installed"**
-- choose **mongosh (2.0 or later)** for : **"Select your mongo shell version"**
-- choose option: **"Run your connection string in your command line"**
-- in the terminal, paste the copied code `mongo "mongodb+srv://<CLUSTER-NAME>.mongodb.net/<DBname>" --apiVersion 1 --username <USERNAME>`
-  - replace all `<angle-bracket>` keys with your own data
-- enter password _(will not echo **\*\*\*\*** on screen)_
+Add pictures and description 
 
-------
+### End Game Page
 
-## Release History
+Add pictures and description 
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+### 404 Page
 
-**June 18, 2024,** Add Mongo back into template
+Add pictures and description 
 
-**June 14, 2024,** Temporarily remove Mongo until the key issue is resolved
+## Styles
 
-**May 28 2024:** Fix Mongo and Links installs
+### Fonts
 
-**April 26 2024:** Update node version to 16
+Below you will find a breakdown of the primary font.
 
-**September 20 2023:** Update Python version to 3.9.17.
+#### Primary Font
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+Add picture and description  
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+### Color Schemes
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+Below you will find a breakdown of each color and its purpose, as well as their contrast score. 
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+#### Colors Chose & Purpose
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+Add pictures and description
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+#### Contrast Score
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+Add pictures and description 
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+### Wireframes Layout 
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+Add pictures and description
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+#### Landing Page 
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+##### Mobile & Desktop
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+#### Game Page
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+##### Mobile & Desktop
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+#### End Game Page
 
-------
+##### Mobile & Desktop
 
-## FAQ about the uptime script
+## Technologies Used 
 
-**Why have you added this script?**
+### Languages 
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+1. [HTML](https://whatwg.org/) 
 
-**How will this affect me?**
+    * Page Markup
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+2. [CSS](https://www.w3.org/)
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+    * Styling
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+3. [Javsascript](https://www.oracle.com/developer/javascript/)
 
-**So….?**
+    * Functions and interactive and responsive design
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+### Libraries 
 
-**Can I opt out?**
+1. [Google Fonts](https://fonts.google.com/)
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+    * Font Style     
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+2. [Font Awesome](https://fontawesome.com/)
 
-**Anything more?**
+    * 
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+3. [Freepik](https://www.freepik.com/)
 
----
+    *  
 
-Happy coding!
+4. [PNGTree](https://www.pngtree.com/)
+
+    * 
+
+### Platforms 
+
+1. [Github](https://github.com/)
+
+    * Storing code remotely and deployment
+
+2. [Gitpod](https://www.gitpod.io/)
+
+    * IDE for project developemnt 
+
+### Other Tools 
+
+1. [W3schools](https://www.w3schools.com/)
+
+    * HTML and CSS educational content
+
+2. [WebAim - Contrast Checker](https://webaim.org/resources/contrastchecker/)
+
+    * Check contrast of website
+
+3. [Online PNG Tools](https://onlinepngtools.com/change-png-color)
+
+    * Change color of PNG (Font Awesome Icons)
+
+4. [WebAim - Wave](https://wave.webaim.org/)
+
+    * Test accessibility 
+
+6. [Google Developer - Lighthouse](https://developer.chrome.com/docs/lighthouse)
+
+    * For testing
+
+7. [Google - Pagespeed](https://pagespeed.web.dev/)
+
+    * For testing
+
+8.  [W3C Validation Service](https://validator.w3.org/)
+
+    * For both HTML and CSS validation 
+
+## Credits 
+
+Add credits
+
+## Testing 
+
+### Lighthouse 
+
+#### Mobile 
+
+![Lighthouse Mobile] 
+
+##### Desktop
+
+![Lighthouse Desktop]
+
+### HTML Validation 
+
+### CSS Validation 
+
+### JShift Validation 
+
+### WebAim - WAVE
+
+#### Landing Page 
+
+#### Game Page 
+
+#### End Game Page 
+
+### General Testing 
+
+Add pictures and description
+ 
+### Mobile Testing
+
+Add pictures, procedures and description
+
+### Desktop Testing 
+
+Add pictures, procedures, and description 
+
+## Bugs
+
+### Fixed Bugs 
+
+Add pictures and description
+
+### Unfixed Bugs 
+
+Add pictures and description
+
+## Future Features
+
+Add future features 
+
+## Deployment
+
+### Cloning Repository 
+
+1. Go to project repository [here](https://github.com/isidorocotugno5P/project2)
+2. Click on the green button labeled "Code" near the top right of the repository
+3. Under the "Local" tab under the green button labeled "Code" copy the URL using HTTPS, make sure you are on the "HTTPS" beneath the "Local" tab of the green button labeled "<> Code"
+4. You can choose to clone the repository with "SSH" or "GTIHub CLI" beneath the tabs labeled under each respective name
+5. To copy each given URL click the copy button next to the URL under each given tab or highlight the URL itself and copy it directly. 
+6. Open a terminal on your personal workspace on Github
+7. Adapt and change the current working directory to the specific location where you would like your directory cloned
+8. Into the terminal type in <code>git clone</code> and paste any of the URL you copied earlier
+9. Press enter and your clone will be created
+
+### Fork
+
+1. Follow the previously given link to the given repository of this project
+2. On the top right corner of the page you will see a dropdown button link labeled "Fork"
+3. Press on it and you should see your own personal Github User ID assuming you have one
+4. Click on your User ID to compute the fork
+5. Now your browser should redirect you to the forked repository that should have been allocated in your own Github
+6. Now if you view the dropdown button on the top right of your own Github organization labeled "Fork" the value should have increased by "1"
+7. You have successfuly copied the original repository 
+
+### Local Deployment
+
+1. Once you have successfuly cloned or forked the repository it is time to locally deploy the website
+2. Log into your own Github account, assuming that you have completed the previous steps you should have already had an account if you do not have an account please create one [here](https://github.com/). Once completed please follow the steps above for cloning or forking ideally before locally deploying the site.
+3. Once you have made a clone or fork of your the linked repository above the repo should appear on the left hand side of your Github dashboard
+4. Click on project repository
+5. Click on the tabs labelled "Settings" to the right of the tab labelled "Insights"
+6. On the left hand side of the Settings tab you will have to naviagte to the section called "Pages"
+7. Once you have clicked on Pages you are going to have to set the "Source" to "Deploy from Branch", the "Main Branch", should be selected and the folder location has to be set to "/root"
+8. Once all setting are set correctly press save and your website should be properly deployed
+9. Return to the tab labelled "Code" on the same level you found the "Setting" tabs earlier, wait a few seconds or minutes, ideally refresh your repository, and your deployed website should be located on the right side of the repository under a section labelled "github-pages"
+10. The given link should be an active link to your live website
+
+### Python Webserver Port 
+
+1. If you do not need a local deployment follow these steps in order to achieve a quick overview of the website
+2. Once you have forked or cloned the linked repository, in your own github dashboard once you have clicked on the cloned or forked repository click on the green button labelled "Open" which will prompt your Github IDE workstation 
+3. In the terminal type in <code>python3 -m http.server</code> to create a port
+4. After a few seconds you should receive a pop up on the right of your workstation which will prompt you to make a choice on the deployed port. 
+5. To view the current version of the coded website click on the button labelled "Open Browser"
+6. This is the current version of the website that has been coded, changed, adapted, or altered on the current repository you have cloned or forked, any saved changed will be adapted on this version of the website before you <code>git push</code> the code and deploy the website

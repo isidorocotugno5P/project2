@@ -12,20 +12,20 @@
 <body class="blackout">
     <h1 class="game-title">Rooftop Jumper</h1>
     <div id="start">
-        <h2 class="text">Welcome to Rooftop Jumper!</h2>
+        <h2 class="text title">Welcome to Rooftop Jumper!</h2>
         <p class="text">In order to play press <strong>space</strong> or <strong>"Start!"</strong> on touchscreen
             devices.</p>
         <p class="text">Press <strong>space</strong> or <strong>"Jump"</strong> on touchscreen devices to jump.</p>
         <p class="text">Get as far as you can by jumping over the deadly crystals. Good luck!</p>
         <button id="start-button" class="btn">Start!</button>
     </div>
-    <div id="game-area">
+    <div id="game-area" fetchpriority="low">
         <div id="character" class="walk"></div>
         <button id="jump-button" class="btn">Jump</button>
     </div>
     <h3 id="score">0</h3>
     <div id="end-game">
-        <h4 class="text">Game Over!</h4>
+        <h4 class="text title">Game Over!</h4>
         <p class="text">Your score is</p>
         <p id="result"></p>
         <button id="replay-button" class="btn">Try again!</button>
@@ -38,7 +38,7 @@
         <audio id="music" src="assets/music/pixel-music.mp3" loop></audio>
     </div>
 
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/script.js" fetchPriority="low"></script>
 </body>
 
 </html>
