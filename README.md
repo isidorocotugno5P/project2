@@ -221,6 +221,7 @@ Add pictures and description, add iOS and devices tested with pictures of screen
 9. Give the character the ability to move left and right to have more control over positioning.
 10. Add a highscore count holder. 
 11. Add a name input holder.
+12. More consistent placement of score and speaker throughout all different types of devices to not obstruct view/gameplay. 
 
 ## Deployment
 

@@ -4,11 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Keywords and Description for improved SEO -->
     <meta name="keywords"
         content="Game, Videogame, 8-bit, 2D, Gaming, Internet Game, Free Game, New Game, Fun, Play, Indie Game">
     <meta name="description"
         content="A fun and interactive 8-bit style 2D game that takes place on top of the roof of a castle where you have to jump over deadly crystals to achieve the highest score possible.">
+    <!-- CSS Stylesheet Link -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Tab Icon / Game Logo -->
     <link rel="icon" href="assets/images/castle-icon.png">
     <title>Rooftop Jumper</title>
 </head>
@@ -16,7 +19,9 @@
 <body class="blackout">
     <main>
         <section>
+            <!-- Game Title -->
             <h1 class="game-title">Rooftop Jumper</h1>
+            <!-- Start page with instrunctions, goals, and start button -->
             <div id="start">
                 <h2 class="text title">Welcome to Rooftop Jumper!</h2>
                 <p class="text">In order to play press <strong>space</strong> or <strong>"Start!"</strong> on
@@ -27,21 +32,27 @@
                 <p class="text">Get as far as you can by jumping over the deadly crystals. Good luck!</p>
                 <button id="start-button" class="btn">Start!</button>
             </div>
+            <!-- Game area including character and obstacles, only appears after game begins -->
             <div id="game-area">
+                <!-- Character - walk and jump animations triggered through Javascript and CSS -->
                 <div id="character" class="walk"></div>
                 <button id="jump-button" class="btn">Jump</button>
             </div>
+            <!-- Score updated consistently through set interval triggered at start of game in JS -->
             <h3 id="score">0</h3>
+            <!-- End screen that appears after collision with the game score -->
             <div id="end-game">
                 <h4 class="text title">Game Over!</h4>
                 <p class="text">Your score is</p>
                 <p id="result"></p>
                 <button id="replay-button" class="btn">Try again!</button>
             </div>
+            <!-- A block that appears on touchscreen devices when oriented in portrait mode -->
             <div id="portrait-block">
                 <p class="text text-block">We are sorry but to play this game please use your device in landscape mode.
                 </p>
             </div>
+            <!-- On click toggle linked in JS enabling user to toggle sound on and off -->
             <div>
                 <img id="speaker" src="assets/images/mute.png" alt="png of a speaker playing audio"
                     onclick="toggleSound()">
@@ -49,6 +60,7 @@
             </div>
         </section>
     </main>
+    <!-- JS Script-->
     <script src="assets/js/script.js" fetchPriority="low"></script>
 </body>
 
