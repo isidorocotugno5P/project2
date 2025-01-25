@@ -10,39 +10,147 @@ I must admit this was extremely challenging for me, and I have made way more mis
 
 ## User Stories 
 
-### 1. Add user story
+### 1. User Story 1: Gameplay Mechanics
 
-### 2. Add user story
+As a player, I want to be able to control the character’s jump by pressing a single button so that I can avoid obstacles (crystals) while running on the rooftop of the castle and aim for a high score.
 
-### 3. Add user story
+- Acceptance Criteria:
+  
+  * The character should automatically run forward on the rooftop.
+  * The player should be able to jump by pressing a single button.
+  * The jump must be timed to avoid colliding with crystals, with the character’s height and distance of the jump being appropriate for gameplay.
+  * Score should start counter once game starts.
 
-### 4. Add user story
+- Key Tasks:
 
-### 5. Add user story
+  * Implement the character's automatic forward movement on the rooftop.
+  * Develop the single-button mechanic to trigger the jump (e.g., “space” key or by clicking a button).
+  * Set jump mechanics to detect crystal collision (i.e., position, height, timing).
+  * Implement a visual feedback system for the scoring mechanism.
+
+### 2. User Story 2: Audio Control
+
+As a player, I want to be able to toggle the in-game music on and off by pressing an icon so that I can adjust the game’s audio experience based on my preference.
+
+- Acceptance Criteria:
+
+  * A loudspeaker icon should be displayed on the game interface.
+  * The icon should toggle between two states: music on (indicated by a full speaker) and music off (indicated by a muted speaker).
+  * The background 8-bit music should be muted upon accessing the website.
+
+- Key Tasks:
+
+  * Design and implement the loudspeaker icon that toggles between two states.
+  * Ensure the music does not start automatically when accessing the website for optimal user experience, also if the music is audible that it loops so it consistently plays without interruption.
+  * Code the functionality so the icon toggles the music state when clicked.
+  * Provide feedback to the player when the music is muted or playing (e.g., change icon appearance).
+
+### 3. User Story 3: Visual Design & Theme
+
+As a player, I want the game to have an engaging, cute medieval theme so that I feel immersed in the rooftop environment while playing.
+
+- Acceptance Criteria:
+
+  * The environment should feature an 8-bit castle rooftop with vibrant medieval-style visuals, such as flags and stone textures.
+  * Crystals should be designed as obstacles in an 8-bit style, appearing at random intervals.
+  * The character should have a charming, pixelated medieval character design.
+  * The character animations should reflect the playful, lighthearted nature of the game.
+
+- Key Tasks:
+
+  * Design and implement a visually appealing 8-bit style rooftop background with a castle theme.
+  * Create crystal obstacles in an 8-bit style.
+  * Design a pixelated medieval character with simple animations (e.g., running, jumping).    
+  * Test visual consistency to ensure all assets work together harmoniously.
+
+### 4. User Story 4: Game Over Screen and Restart Option
+
+As a player, I want to see a clear "Game Over" screen with the option to restart the game, so that I can immediately try again after losing with the final score displayed.
+
+- Acceptance Criteria:
+
+  * When the player collides with a crystal, a "Game Over" screen should appear.
+  * The screen should display a "Try Again" button that allows the player to restart the game.
+  * The "Game Over" screen should include a simple message such as “Game Over!” with the final score displayed to the user. 
+
+- Key Tasks:
+
+  * Design a "Game Over" screen with the final score displayed.
+  * Implement logic to trigger the "Game Over" screen when a collision with a crystal occurs.
+  * Add a "Try Again" button that resets the game and starts a new session.
+  * Provide feedback to inform the player that the game has ended and they can start over.
+  * Ensure the button resets the game to its initial state, including the score and character position.
+
+### 5. User Story 5: Start Screen with Instructions and Game Explanation
+
+As a player, I want to see a start screen with a brief explanation of the game, how to play, and a "Start" button, so that I understand the objective and controls before starting the game.
+
+- Acceptance Criteria:
+  
+  * The start screen should clearly explain the objective of the game and how to play (e.g., jump over crystals to avoid them).
+  * A button labeled "Start Game" should be visible, allowing the player to start the game when ready.
+  * The screen should also include a simple set of instructions, such as “Press [Button] to Jump.”
+  * The start screen design should match the medieval, cute 8-bit theme of the game.
+
+- Key Tasks:
+
+  * Design a visually appealing start screen that includes a background consistent with the game’s theme.
+  * Add a short description of the game, explaining the goal: “Run on the castle rooftops and jump over crystals to get the highest score.”
+  * Include a button labeled “Start Game” that starts the gameplay when clicked.
+  * Display clear and simple instructions, such as “Press [Button] to Jump” and “Avoid Crystals.”
+  * Ensure that the start screen is easily navigable and doesn’t delay the start of the game when the player is ready to begin.
 
 ## Features 
 
-This section will include the features of this videogame project and how they effectively aided in achieving all goals. 
+This section will include the features of this videogame project and how they effectively aided in achieving all goals. Design is the exact same for mobile as for desktop. The only different is the portrait mode block screen added to devices when orientation is in portrait mode. 
 
-### Landing Screen
+### Start Screen
 
-Add pictures and description
+![Start Screen](assets/images/start-screen.png)
 
-#### Portrait Orientation and Block Screen
+### Game Screen
 
-Add pictures and description 
+![Game Screen](assets/images/game-screen.png)
 
-### Game Page
+### End Screen
 
-Add pictures and description 
+![End Screen](assets/images/end-screen.png)
 
-### End Game Page
+### Portrait Mode Block Screen (Touchscreen Devices Only)
 
-Add pictures and description 
+![Portrait Mode Block Screen](assets/images/portrait-block.png)
 
-### 404 Page
+### Tab
 
-Add pictures and description 
+![Tab Icon and Title](assets/images/tab-layout.png)
+
+## Lighthouse Layout
+
+### IPhone SE
+
+###
+
+###
+
+###
+
+###
+
+###
+
+###
+
+###
+
+###
+
+###
+
+###
+
+###
+
+###
 
 ## Styles
 
@@ -70,17 +178,13 @@ Add pictures and description
 
 Add pictures and description
 
-#### Landing Page 
+#### Mobile & Desktop
 
-##### Mobile & Desktop
+##### Landing Page 
 
-#### Game Page
+##### Game Page
 
-##### Mobile & Desktop
-
-#### End Game Page
-
-##### Mobile & Desktop
+##### End Game Page
 
 ## Technologies Used 
 
@@ -181,6 +285,8 @@ Add credits
 ![W3C CSS Validation](assets/images/w3c-css-validation.png)
 
 ### JSHint Validation 
+
+![JSHint](assets/images/jshint.png)
 
 ### WebAim - WAVE
 

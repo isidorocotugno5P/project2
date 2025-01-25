@@ -71,7 +71,7 @@ jumpButton.addEventListener("click", () => {
 * Function that engages the correct animation patterns for "jumping" and "walking"
 */
 function jump() {
-    if (!character.classList == "jump") {
+    if (character.classList == "jump") {
         return;
     }
     character.classList.add("jump");
