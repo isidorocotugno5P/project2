@@ -81,48 +81,6 @@
   z-index: 3;
 }
 
-/* Button Styles */
-
-.btn {
-  font-family: 'Pixelify Sans';
-  border: 6px inset #ffa202c3;
-}
-
-.btn:hover {
-  border: 6px outset #ffa202c3;
-}
-
-#jump-button {
-  position: absolute;
-  z-index: 2;
-  top: 90%;
-  left: 90%;
-}
-
-/* Game Area Styles and Animations */
-
-#game-area {
-  width: 100%;
-  height: 324px;
-  border: 10px groove gold;
-  background-image: url("../images/game-bg.png");
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  animation: forward 600s infinite linear;
-}
-
-@keyframes forward {
-  from {
-    background-position: 11150%;
-  }
-
-  to {
-    background-position: 0%;
-  }
-}
-
 /* Character Styles and Animations */
 
 .jump {
@@ -181,6 +139,48 @@
   top: 200px;
   position: absolute;
   z-index: 1;
+}
+
+/* Button Styles */
+
+.btn {
+  font-family: 'Pixelify Sans';
+  border: 6px inset #ffa202c3;
+}
+
+.btn:hover {
+  border: 6px outset #ffa202c3;
+}
+
+#jump-button {
+  position: absolute;
+  z-index: 2;
+  top: 90%;
+  left: 90%;
+}
+
+/* Game Area Styles and Animations */
+
+#game-area {
+  width: 100%;
+  height: 324px;
+  border: 10px groove gold;
+  background-image: url("../images/game-bg.png");
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: forward 600s infinite linear;
+}
+
+@keyframes forward {
+  from {
+    background-position: 11150%;
+  }
+
+  to {
+    background-position: 0%;
+  }
 }
 
 /* Obstacle Styles and Animations */
