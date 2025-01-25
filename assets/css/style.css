@@ -26,7 +26,7 @@
   font-size: 100px;
   -webkit-text-stroke-width: 5px;
   -webkit-text-stroke-color: orange;
-  margin-block-start: 0px!important;
+  margin-block-start: 0px !important;
 }
 
 .end {
@@ -212,12 +212,16 @@
   right: 5px;
   position: absolute;
   z-index: 3;
+  background-color: #f9e4bc;
+  border: gold 3px solid;
 }
 
 #score {
   color: black;
   position: absolute;
   top: 255px;
+  background-color: #f9e4bc;
+  border: gold 3px solid;
 }
 
 /* Media Queries */
@@ -225,7 +229,7 @@
 /* Media Query for removed Game Title up until 1023px */
 
 @media screen and (max-width:1023px) {
-    
+
   .game-title {
     display: none;
   }
@@ -234,14 +238,16 @@
 /* Media Query for removal of portrait orientation screen blocker */
 
 @media screen and (orientation:landscape) {
+
   #portrait-block {
     display: none;
-    }
+  }
 }
 
 /* Media Query for speaker and score style for extra small and small screens */
 
 @media screen and (min-width: 0px) {
+
   #speaker {
     top: 30px;
   }
@@ -254,6 +260,7 @@
 /* Media Query for speaker and score style for medium screens */
 
 @media screen and (min-width: 768px) {
+
   #speaker {
     top: 55px;
   }
@@ -268,7 +275,7 @@
 @media screen and (min-width: 992px) {
 
   .game-title {
-    margin-top: 50px!important;
+    margin-top: 50px !important;
   }
 
   #speaker {
@@ -289,7 +296,7 @@
   }
 
   .game-title {
-    margin-top: 10px!important;
+    margin-top: 10px !important;
   }
 
   #speaker {
@@ -306,7 +313,7 @@
 @media screen and (min-width: 1200px) {
 
   .game-title {
-    margin-top: 0px!important;
+    margin-top: 0px !important;
     font-size: 700%;
   }
 
@@ -326,7 +333,7 @@
   .text {
     font-size: xxx-large;
   }
-  
+
   #speaker {
     top: 350px;
   }
