@@ -124,28 +124,6 @@ This section will include the features of this videogame project and how they ef
 
 ![Tab Icon and Title](assets/images/tab-layout.png)
 
-## Lighthouse Layout
-
-This section is a simulated display of how the game appeared on Google Devs on different screen sizes, proving its reponsiveness and stylistic consistency. Upon reviewing my grade for the last project I came across a problem that became apparent to me while doing this project as well which is that the website is cut off on one end, which was a criticism in the previous review. Now that I am aware that this issue exists, and persists, it will be something that I will be tackling with my mentor as to why that happens when I code and the mistakes I am making to cause that, that I am currently not aware of. 
-
-### IPhone SE
-
-### IPhone 12 Pro
-
-### IPhone 14 Pro Max
-
-### Samsung Galaxy S20 Ultra
-
-### iPad Mini
-
-### iPad Pro
-
-### Surface Duo
-
-### Asus Zenbook Fold
-
-### Nest Hub Max
-
 ## Styles
 
 ### Fonts
@@ -419,6 +397,14 @@ As one can see above when using my own computer the design and responsiveness in
 ![Macbook 13 2017 End](assets/images/macbook-pro-2017-end.png)
 
 As one can see above when using my family computer the design and responsiveness in consistent with what I was looking for. This was tested on Safari.
+
+#### Macbook Pro 14 Inch 2023 (macOS Sequoia)
+
+![Macbook 14 2023 Start](assets/images/macbook-pro-14-2023-start.jpg)
+![Macbook 14 2023 Game](assets/images/macbook-pro-14-2023-game.jpg)
+![Macbook 14 2023 End](assets/images/macbook-pro-14-2023-end.jpg)
+
+The results here were the same as the other Macbook devices.
 
 #### Apple Mac Mini M4 on 50 inch Screen 
 
