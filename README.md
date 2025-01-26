@@ -1,4 +1,4 @@
-# Rooftop Jumper 2D 8-Bit Resolution Game 
+# Rooftop Jumper 2D 8-Bit Style Game 
 
 Welcome to Rooftop Jumper! A 2D 8-Bit style free online videogame using HTML, CSS, and Javascript for an interactive and responsive user experience. I was born in 1995 and had a bigger sister who was very into videogames, this was my inspiration for the game and the motivation to attempt something more complicated and complex than a simple rock, paper, scissors game or something similar. I grew up playing so many different kinds of 2D games, where all you could typically do was move in 4 directions, jump, duck, and maybe even fire off something or use items. Although I would have loved to incorporate all elements and made a fully completed game with an end goal, and even a background story, with my current knowledge I would have not managed that in the alloted time, so I stuck with the most (not-so-simple) simple functions. 
 
@@ -126,31 +126,25 @@ This section will include the features of this videogame project and how they ef
 
 ## Lighthouse Layout
 
+This section is a simulated display of how the game appeared on Google Devs on different screen sizes, proving its reponsiveness and stylistic consistency. Upon reviewing my grade for the last project I came across a problem that became apparent to me while doing this project as well which is that the website is cut off on one end, which was a criticism in the previous review. Now that I am aware that this issue exists, and persists, it will be something that I will be tackling with my mentor as to why that happens when I code and the mistakes I am making to cause that, that I am currently not aware of. 
+
 ### IPhone SE
 
-###
+### IPhone 12 Pro
 
-###
+### IPhone 14 Pro Max
 
-###
+### Samsung Galaxy S20 Ultra
 
-###
+### iPad Mini
 
-###
+### iPad Pro
 
-###
+### Surface Duo
 
-###
+### Asus Zenbook Fold
 
-###
-
-###
-
-###
-
-###
-
-###
+### Nest Hub Max
 
 ## Styles
 
@@ -160,19 +154,37 @@ Below you will find a breakdown of the primary font.
 
 #### Primary Font
 
-Add picture and description  
+![Font](assets/images/font.png)
+
+I chose "Pixelify Sans" because the font is heavily reminiscent of the theme of the game and the vibe I curated around it. It is pure nostalgia, whether you were born in the 80's and 90's and attended arcades, are aware of the culture around old 8bit style games, or can just tell the consistent styling choices by the atmosphere this font creates, artistic throwbacks in any shape or form when carefully put together make people feel nostalgic regardless of whether they have experienced the time or not. 
 
 ### Color Schemes
 
-Below you will find a breakdown of each color and its purpose, as well as their contrast score. 
+Below you will find a breakdown of each color and its purpose, as well as their contrast score. The color scheme is a lot simpler than my last project, but the colors were still carefully chose to create a comforting experience with warm tones while still retaining a sort of visual lightness and lightheartedness.  
 
 #### Colors Chosen & Purpose
 
-Add pictures and description
+![Beige](assets/images/beige.png)
+
+The beige color helps support the overall comforting, cozy, laidback, and non-serious feeling this game conveys while being warm but simultaneously light and not too heavy to due the fact that it literally is a lighter shade.
+
+![Gold](assets/images/gold.png)
+
+The gold is there to reinforce the beige but give the entire game a royal touch to emphasize the medieval world the game is set in. It is used as accents to not overwhelm other colors or aspects of the game but still adding some luxuriousness. 
+
+![Orange](assets/images/orange.png)
+
+The orange color is there as a highlight color that lives within a similar family to the beige or gold but adds a little different extra. Used as highlights it helps give the color scheme I have created more depth and a little more variety without being too overwhelming or visually inconsistent. 
+
+![Black](assets/images/black.png)
+
+The black is a classic color for these 8bit games and reinforces the idea of this being a throwback to the Arcades. Most of those games have either white or black colored font writing. It creates a strong contrast to the main colors chosen, making everything legible and accessible while simultaneously retaining the stylistic originality of these old school games. 
 
 #### Contrast Score
 
-Add pictures and description 
+![Contrast Score](assets/images/actual-contrast.png)
+
+This is the actual contrast score. The reason I say actual, is because in the testing phase, when I used WebAim Wave an error occured that was illogical. For a more detailed breakdown see the testing section.
 
 ### Wireframes Layout 
 
@@ -288,7 +300,14 @@ Add credits
 
 ![JSHint](assets/images/jshint.png)
 
+As you can see there are no issues present in my Javascript code. There is a mention of an unused variable, but that was used as an on-click function in the HTML. I know that these are discouraged, but the reason I chose to use and include this is because I wanted to display as well as test and experiment different possible approaches. Instead of being told what is right and what is wrong, even if I agree or disagree, I think every element should be tested and tried in order to understand why, or why not. 
+
 ### WebAim - WAVE
+
+![WebAim Wave](assets/images/webaim-wave.png)
+![WebAim Wave](assets/images/webaim-wave-contrast.png)
+
+As you can see above we have the WebAim Wave results. The aforementioned contrast issue is clearly visible here as when you click on the contrast section of the three errors that occured, the program is comparing a black font to a black background creating a contrast of 1:1, which very obvsiously is impossible to read for anyone. Luckily as shown above in the actual contrast results, the contrast is closer to 17:1 making it perfectly legible and rendering these errors invalid. 
 
 ### General Testing 
 
