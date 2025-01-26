@@ -188,15 +188,25 @@ This is the actual contrast score. The reason I say actual, is because in the te
 
 ### Wireframes Layout 
 
-Add pictures and description
+Here you can see the layout for landscape touch screen devices and desktop devices as well as laptop screen is exactly the same. My focus was not so much CSS individuality on each screen but I wanted to rather challenge myself by choosing something challenging in regards to Javascript as that was my focus for this project. I chose to do it per hand because it is far more efficient and a lot more personal. Balsamiq is great, but I feel far more comfortable and connected to my project when I do the wireframe by hand. Long term I just need to make sure I have the proper tools to be able to make accurate designs on paper. 
 
 #### Mobile & Desktop
 
-##### Landing Page 
+##### Start Page 
+
+![Wireframe Game Start Wireframe](assets/images/game-start-wireframe.jpg)
 
 ##### Game Page
 
+![Wireframe Game Wireframe](assets/images/game-wireframe.jpg)
+
 ##### End Game Page
+
+![Wireframe Game Over Wireframe](assets/images/game-over-wireframe.jpg)
+
+### Music
+
+The music for this game was carefully chosen and curated. Trying different types of music, implementing it into the game, and testing it, it was clear that the music that emphasized the 8bit style was going to be the best choice. Having an audible and aural reinforcement of the atmosphere that is created in and around the game makes the game far more submersive and addictive in comparison to having no sound at all. 
 
 ## Technologies Used 
 
@@ -311,15 +321,57 @@ As you can see above we have the WebAim Wave results. The aforementioned contras
 
 ### General Testing 
 
-Add pictures and description
+Apart from the tests shown above and below, the most difficult aspect of this game was the collision algorithm. I was adamant about doing everything myself and making sure it was 100% original. What I did not know was how difficult it would end being accurately adjusting the collision algorithm to different screen sizes. This part of my code arguably took the longest and the most testing by far. I tried different approaches in the way I calculated and detected the collision, but no matter what I did as soon as I played it on a screen significantly smaller or bigger, the collision detection was completely off. Although I am certain there is a more efficient, more accurate mathematical approach in the end I decided I could calculate the collision based on bootstrap breakpoints and calculate the inner screen width using an external function that would feed the result back into the original calculation, then identify if the collision is valid based on what screen size the game was being played on by using a if else statement.
+
+Developing this aspect of the game although terribly stressful, was also the most fun, and taught me more than anything else so far about functions, but also about coding as a whole. 
+
+Furthermore, I generally tested and tried to get my hands on more devices in my last project. This showed me the variability of issues that possibly could arise post deployment on different devices, with different operating systems, from different years, using different browsers. I learned just as much doing this, as I did when I was actually coding. It helped me understand what can go wrong, why it can go wrong, and how much different the final deployed result can be from a Google Devs simulation. 
  
 ### Mobile Testing
 
-Add pictures, procedures and description
+These pictures and descriptions are referring to phones I physically tested. 
+
+#### Samsung Galaxy A13 (Personal Phone)
+
+![Samsung Galaxy A13 Block](assets/images/iphone-13-pro-block.jpg)
+![Samsung Galaxy A13 Start](assets/images/iphone-13-pro-start.jpg)
+![Samsung Galaxy A13 Game](assets/images/iphone-13-pro-game.jpg)
+![Samsung Galaxy A13 End](assets/images/iphone-13-pro-end.jpg)
+
+#### IPhone 14 Pro Max 
+
+![IPhone 14 Pro Max Block](assets/images/iphone-14-pro-max-block.jpg)
+![IPhone 14 Pro Max Start](assets/images/iphone-14-pro-max-start.jpg)
+![IPhone 14 Pro Max Game](assets/images/iphone-14-pro-max-game.jpg)
+![IPhone 14 Pro Max End](assets/images/iphone-14-pro-max-end.jpg)
+
+The gaming performance on this phone were functioning very well overall there were just some stylistic issues and bugs post deployment that have been described in the bugs section of this README file.
+
+#### IPhone 13 Pro
+
+![IPhone 13 Pro Block](assets/images/iphone-13-pro-block.jpg)
+![IPhone 13 Pro Start](assets/images/iphone-13-pro-start.jpg)
+![IPhone 13 Pro Game](assets/images/iphone-13-pro-game.jpg)
+![IPhone 13 Pro End](assets/images/iphone-13-pro-end.jpg)
+
+The gaming performance on this phone were functioning well overall, but again there were just some stylistic issues and bugs post deployment that have been described in the bugs section of this README file.
+
+#### IPhone 11
+
+![IPhone 11 Block](assets/images/iphone-11-block.jpg)
+![IPhone 11 Start](assets/images/iphone-11-start.jpg)
+![IPhone 11 Game](assets/images/iphone-11-game.jpg)
+![IPhone 11 End](assets/images/iphone-11-end.jpg)
+
+As displayed above, this is the phone (browser was Safari), that gave me the most trouble. The issues were multiple, and in the timeframe I had as well as my level of capability, not possible for me to do. For a more detailed breakdown of the individual bugs, please see the unfixed bugs section.
+
+#### IPhone SE 1st Generation
+
+#### IPhone SE 2nd Generation 
 
 ### Desktop Testing 
 
-Add pictures, procedures, and description 
+These pictures and descriptions are referring to desktop devices and laptops I physically tested. 
 
 ## Bugs
 
@@ -347,6 +399,8 @@ Add pictures and description, add iOS and devices tested with pictures of screen
 10. Add a highscore count holder. 
 11. Add a name input holder.
 12. More consistent placement of score and speaker throughout all different types of devices to not obstruct view/gameplay. 
+13. Adding other interactive design elements like clouds drifting by or birds flying by.
+14. Adding individual audio effects, like crystal walking, jumping sounds, footstep effects, death sound, wind or field audio to create a more immersive experience. 
 
 ## Deployment
 
