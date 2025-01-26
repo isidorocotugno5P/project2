@@ -327,16 +327,20 @@ Developing this aspect of the game although terribly stressful, was also the mos
 
 Furthermore, I generally tested and tried to get my hands on more devices in my last project. This showed me the variability of issues that possibly could arise post deployment on different devices, with different operating systems, from different years, using different browsers. I learned just as much doing this, as I did when I was actually coding. It helped me understand what can go wrong, why it can go wrong, and how much different the final deployed result can be from a Google Devs simulation. 
  
-### Mobile Testing
+### Mobile and Tablet Testing
 
-These pictures and descriptions are referring to phones I physically tested. 
+These pictures and descriptions are referring to phones I physically tested. Most pictures were taken during a screen recording. 
+
+Unfortunately I was not able to get my hands on any kind of tablet device, but I think this following logic would also apply to these devices. Since the game was opened on the browser, and not an app, the tabs of the browsers, even if it was just one, got in the way of the screen and minimized the quality of the experience overall. If I was to upgrade the user experience, not really knowing how to do this, I would have wanted to implement a full screen feature, so the game takes up the entire screen and nothing gets in the way.
 
 #### Samsung Galaxy A13 (Personal Phone)
 
-![Samsung Galaxy A13 Block](assets/images/iphone-13-pro-block.jpg)
-![Samsung Galaxy A13 Start](assets/images/iphone-13-pro-start.jpg)
-![Samsung Galaxy A13 Game](assets/images/iphone-13-pro-game.jpg)
-![Samsung Galaxy A13 End](assets/images/iphone-13-pro-end.jpg)
+![Samsung Galaxy A13 Block](assets/images/galaxy-a13-block.jpg)
+![Samsung Galaxy A13 Start](assets/images/galaxy-a13-start.jpg)
+![Samsung Galaxy A13 Game](assets/images/galaxy-a13-game.jpg)
+![Samsung Galaxy A13 End](assets/images/galaxy-a13-end.jpg)
+
+Funnily enough, my phone was one of the only ones that was consistent throughout and where everything went as planned. It played just as well as on the computer and everything was fitted well. Everything function as it was supposed to.
 
 #### IPhone 14 Pro Max 
 
@@ -371,7 +375,29 @@ As displayed above, this is the phone (browser was Safari), that gave me the mos
 
 ### Desktop Testing 
 
-These pictures and descriptions are referring to desktop devices and laptops I physically tested. 
+These pictures and descriptions are referring to desktop devices and laptops I physically tested.
+
+#### Macbook Pro 13 Inch mid 2012 (macOS Catalina)
+
+![Macbook 13 2012 Start](assets/images/macbook-pro-2012-start.png)
+![Macbook 13 2012 Game](assets/images/macbook-pro-2012-game.png)
+![Macbook 13 2012 End](assets/images/macbook-pro-2012-end.png)
+
+As one can see above when using my own computer the design and responsiveness in consistent with what I was looking for. This was tested on Google Chrome.
+
+#### Macbook Pro 13 Inch 2017 (macOS Ventura)
+
+![Macbook 13 2017 Start](assets/images/macbook-pro-2017-start.png)
+![Macbook 13 2017 Game](assets/images/macbook-pro-2017-game.png)
+![Macbook 13 2017 End](assets/images/macbook-pro-2017-end.png)
+
+As one can see above when using my family computer the design and responsiveness in consistent with what I was looking for. This was tested on Safari.
+
+#### Apple Mac Mini M4 on 50 inch Screen 
+
+![Mac Mini Start](assets/images/mac-mini-start.png)
+![Mac Mini Game](assets/images/mac-mini-game.png)
+![Mac Mini End](assets/images/mac-mini-end.png)
 
 ## Bugs
 
@@ -379,11 +405,49 @@ This game was incredibly difficult for me to code and it took an incredible amou
 
 ### Fixed Bugs 
 
-Add pictures and description
+#### Collision Algorithm
+
+This was easily the hardest part of the project. The mistake I originally made was that I was taking the size of the screen width from the outside instead of the inside if I am not mistaken, and then based the collision point based on the percentage of the width at which it occured. I still do not fully understand why it did not work, but logically I assume that depending on the screen size that percentage point shifts, as the location of the character would shift. 
+
+Instead what I ended up doing was I made an external function that returned a specific string value indicating the different screen sizes and breakpoints, and then calculated by trial and error what each percentage point of collision would be. Although I am extremely happy I somehow made it work, I wish I could have coded something more accurate, especially because it was inefficient to calculate the collision point on each device size as well as sometimes when jumping early and just barely touching the back end of the obstacle after jumping over it, the collision doesnt detect that point meaning the span of my collision algorithm is innacurate. I would love to attempt making another collision algorithm, but try a different and more precise approach. 
+
+#### Jump Animation
+
+I was struggling to somehow combine one animation with another. One being the actual jump and its relative location in regards to the character on the screen, meaning how high and how far. The other was the using the sprite sheet and getting the animation to happen while he was jumping, making him look more alive. 
+
+The issue was that I had two different keyframes that were overlapping each other cause they were included on the same class as different animations. By trial and error I understood that the animation and physical location changes of the animation had to be under the same keyframe and animation class. 
+
+#### Game in Portrait on Touchscreens 
+
+This game is not fun in portrait mode, nor is it truly playable. The only 2D games playable in portrait modes of this style would be something similar to "Doodle Jump", where it goes up and down, but not left to right where obstacles are coming at you from such a short distance. So instead of taking on the almost literal impossible challenge of making the game playable in portrait mode I was wondering if there was a way I could force users to play the game in landscape. That is when I came across the orientation targeting abilities in a media query that bases its assumption whether its a touchscreen in portrait or landscape on a ratio between width and height. 
+
+#### Start and End Screens
+
+It was a timely struggle, not an illogical one, but just a time consuming one, to make the the start upon exiting the start screen, and the game end, the moment the end screen appears so the score appended on the end screen was not changing as the game went on secretely in the background. 
+
+The way I worked around this is that the game only started once the first jump is taken which ended up being of stylistic advantage because many old school games I have seen developed this way that have a start screen sometimes also act the way mine does in the beginning. What I mean by that is that the player jumps when you press space on the start screen to start the game, or when you press "Start", which then triggers the start of the game and the creation of obstacles. This is similar to other old school arcade games that I have seen which have a one or two button gameplay system so internally because of the limited buttons, if one button carries 2 functions, both get executed. 
+
+For the end screen I covered the game with the page, indicating that its game over, and in the background I removed the appended character in the game area so he would stop running into obstacles therefore it would stop updating the score when the next collision happened, because collision with the obstacles themselves was not possible.
 
 ### Unfixed Bugs 
 
-Add pictures and description, add iOS and devices tested with pictures of screen recording and problem description 
+#### The IPhone 11 Issues
+
+In the pictures that were displayed in the Mobile Testing section I mentioned that the device that gave me the majority of issues was the IPhone 11. I was not able to understand why this was happening but it was incredibly interesting because it was the only device on which these issues occured. We made sure it had the most recent iOS update and that other similar apps or games were functioning on the device as well as Safari. 
+
+The major issues that persisted, aside from the start text being too large to fit on screen in the beginning (but this was an issue on many small screen devices, although not an issue on the simulator in Google Devs), was that first of all the game was impossibly slow, in fact it was so slow that if you were to attempt to even jump over an obstacle (if you had the patience to wait for it to arrive at the character which took about 40 seconds), you could jump past about 5% of the obstacle, meaning you would always land on top of it no matter what. I would love to show a video, but I am not sure how I could implement that into the README. Second of all, the game produced so many obstacles in a row, that even if one attempted and succeeded in jumping over the first obstacle which was impossible in it of itself, the second obstacle would have impaled you immediately because the space in between obstacles was literally non existent making it impossible to jump inbetween obstacles. 
+
+#### Excessive Obstacle Creation 
+
+![Obstacle Bug](assets/images/obstacle-bug.png)
+
+Picture above displaying the bug
+
+When playing the game and letting the game continue while being on a different programm, software, or tab on the same browser, the game creates obstacles one after the other in the time you are not on the tab. Once you return, depending on how long you were gone, the game displays 10+ obstacles in a row one over another, not next to each other, but literally layered over one another. 
+
+#### Stylistic Differences on Devices vs Simulator (Google Devs)
+
+This was one of the reasons I learned to understand why testing your deployed code on different devices is so crucial. Although Google Devs indicated that everything should look perfectly, one I tested it on specific devices, at times even the same screen available within the simulator the result displayed was different. This time the issue was that the text on the starting screen was so large that the start button was slightly off grid. Although still pressable and playable on all devices, it was not stylistically appealing, nor user friendly. Although I fixed most of these issues after coming across this, I am still adding this bug to the unfixed bug section because I am obviously unable to test it across enough devices to ensure that this bug is indeed fixed on all devices. 
 
 ## Future Features
 
@@ -401,6 +465,52 @@ Add pictures and description, add iOS and devices tested with pictures of screen
 12. More consistent placement of score and speaker throughout all different types of devices to not obstruct view/gameplay. 
 13. Adding other interactive design elements like clouds drifting by or birds flying by.
 14. Adding individual audio effects, like crystal walking, jumping sounds, footstep effects, death sound, wind or field audio to create a more immersive experience. 
+
+## New Applied Functions and Features Learned
+
+### Keyframes and CSS Animations
+
+This was probbaly the most fun aspect to learn because I have a general affinity for animation, and also it is extremely gratifying to borderline bring something to life and anthropomorphise a picture of something, or give it certain characteristics that let it come to life or makes it seem realistic. The challenge of also incorporate Javascript functions that manipulated when he was jumping, and walking, and that each animation sequence was triggered correctly gave me a new perspective on how to target and switch classes on different HTML elements. 
+
+### Integrated Javascript Function
+
+In general functions that already exist within Javascript I find incredibly interesting and useful such as event listeners, or being able to pull something from HTML and targeting it, or changing classes on CSS of HTML elements.
+
+#### .play and .pause
+
+This took a little bit of digging because I could not get my music to play and work in a toggling function for the longest time until I found this article on .play and .pause on W3schools and applied it to my code. 
+
+### Getting width of screen being used to calculate collision point
+
+window.innerWidth when applied in my collision detection algorithm as a external function that returned a value depending on the size of the screen the user is on saved me as I was only able to figure this out a few days before submission. This enabled me, when applied, to correctly return a specific screen size value which was categorized by using bootstrap breakpoints and given different strings (e.g. sm, md, lg, and xl), gave me the ability to individually target the different screen size and adjust the collision point dependent on screen size. 
+
+### setInterval and setTimeout
+
+This came in very useful for my entire game to trigger certain functions and sequences, to let something happen infinitely or after a certain period of time. It gave me more control over the control when creating and destroying obstacles obstacles. 
+
+### clearInterval
+
+Before I came across this function my code was causing the console to shoot out errors repeatedly because the setInterval function that was applied on the obstacle whose job it was to remove the obstacle once off screen was repeating itself upon the already deleted appended Child which made the console return an error message informing me that this Node is not a child of the parent element, because it did not exist anymore. Once I assigned a variable to that interval, and cleared it within the same interval dependent on a certain condition the function cleared itself the moment the condition was met and the console stopped returning error messages. 
+
+### do...while...
+
+This loop came in handy when I could not figure out how to overcrowd the game area with obstacles, and make sure that the random obstacles were not coming out one after the other not giving the user the possibility of having enough space in between obstacles making the game impossible. The loop helped me set a more appropriate range for the number randomization which gave the obstales the necessary space to make the game playable. 
+
+### location.reload()
+
+Although I would have preferred to code a game restart/reset somehow, even though I tried, I was not able to make it happen. So I looked into what I could do in order to reset the game nonetheless giving the user the opportunity to play the game without having to click the reload button themselves, making it appear to be a more seemless user experience. 
+
+### Orientation: Landscape
+
+This was an interesting ability to acquire, since being able to target a specific orientation of touch screen devices can come in incredibly handy for individualising experiences on these devices and also controlling user experience making sure you make them see what you want them to see, and how you want them to see it. 
+
+### fetchPriority 
+
+Attaching this to the script linking my Javascipt to my HTML improved my performance score on lightouse by circa 30 points +/- 2 points depending on whether it was set to mobile or desktop. 
+
+### webkit-text-stroke (width/color)
+
+Learning about this gave my title more depth and a more interesting design.
 
 ## Deployment
 
