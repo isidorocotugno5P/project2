@@ -282,9 +282,17 @@ The music for this game was carefully chosen and curated. Trying different types
 
     * For both HTML and CSS validation 
 
+7.  [JSHint](https://jshint.com/)
+
+    * For JS Testing
+
+1. [MDN Web Docs](https://developer.mozilla.org/de/)
+
+    * HTML, CSS, and Javascript educational content
+
 ## Credits 
 
-Add credits
+No external code was used to make this game. The game was developed based on lessons learned in the course work as well as self taught functions and material on different educational websites such as W3schools and MDN Web Docs. 
 
 ## Testing 
 
@@ -342,6 +350,15 @@ Unfortunately I was not able to get my hands on any kind of tablet device, but I
 
 Funnily enough, my phone was one of the only ones that was consistent throughout and where everything went as planned. It played just as well as on the computer and everything was fitted well. Everything function as it was supposed to.
 
+#### Samsung Galaxy A14 
+
+![Samsung Galaxy A14 Block](assets/images/galaxy-a14-block.jpg)
+![Samsung Galaxy A14 Start](assets/images/galaxy-a14-start.jpg)
+![Samsung Galaxy A14 Game](assets/images/galaxy-a14-game.jpg)
+![Samsung Galaxy A14 End](assets/images/galaxy-a14-end.jpg)
+
+Although this phone is very similar to mine, I came across similar stylistic issues on the IPhones in the following tests. This makes me believe that it is an issue of specific screen sizes with specific values. 
+
 #### IPhone 14 Pro Max 
 
 ![IPhone 14 Pro Max Block](assets/images/iphone-14-pro-max-block.jpg)
@@ -371,7 +388,17 @@ As displayed above, this is the phone (browser was Safari), that gave me the mos
 
 #### IPhone SE 1st Generation
 
+![IPhone SE 1 Block](assets/images/iphone-se-1-block.jpg)
+![IPhone SE 1 Start](assets/images/iphone-se-1-start.jpg)
+![IPhone SE 1 Game](assets/images/iphone-se-1-game.jpg)
+![IPhone SE 1 End](assets/images/iphone-se-1-end.jpg)
+
 #### IPhone SE 2nd Generation 
+
+![IPhone SE 2 Block](assets/images/iphone-se-2-block.jpg)
+![IPhone SE 2 Start](assets/images/iphone-se-2-start.jpg)
+![IPhone SE 2 Game](assets/images/iphone-se-2-game.jpg)
+![IPhone SE 2 End](assets/images/iphone-se-2-end.jpg)
 
 ### Desktop Testing 
 
