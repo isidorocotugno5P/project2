@@ -124,6 +124,10 @@ This section will include the features of this videogame project and how they ef
 
 ![Tab Icon and Title](assets/images/tab-layout.png)
 
+### 404 Page
+
+![404 Page](assets/images/404.png)
+
 ## Styles
 
 ### Fonts
