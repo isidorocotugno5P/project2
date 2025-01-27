@@ -264,9 +264,13 @@ The music for this game was carefully chosen and curated. Trying different types
 
     * For JS Testing
 
-1. [MDN Web Docs](https://developer.mozilla.org/de/)
+8. [MDN Web Docs](https://developer.mozilla.org/de/)
 
     * HTML, CSS, and Javascript educational content
+
+9. [Copyleaks](https://copyleaks.com/de/)
+
+    * Plagiarism and AI test
 
 ## Credits 
 
@@ -312,12 +316,18 @@ Apart from the tests shown above and below, the most difficult aspect of this ga
 Developing this aspect of the game although terribly stressful, was also the most fun, and taught me more than anything else so far about functions, but also about coding as a whole. 
 
 Furthermore, I generally tested and tried to get my hands on more devices in my last project. This showed me the variability of issues that possibly could arise post deployment on different devices, with different operating systems, from different years, using different browsers. I learned just as much doing this, as I did when I was actually coding. It helped me understand what can go wrong, why it can go wrong, and how much different the final deployed result can be from a Google Devs simulation. 
+
+#### Plagiarism and AI Test
+
+![Copyleaks Results](assets/images/copyleaks-results.png)
+![Copyleaks Plagiarism](assets/images/copyleaks-plagiarism.png)
+![Copyleaks AI](assets/images/copyleaks-ai.png)
  
 ### Mobile and Tablet Testing
 
 These pictures and descriptions are referring to phones I physically tested. Most pictures were taken during a screen recording. 
 
-Unfortunately I was not able to get my hands on any kind of tablet device, but I think this following logic would also apply to these devices. Since the game was opened on the browser, and not an app, the tabs of the browsers, even if it was just one, got in the way of the screen and minimized the quality of the experience overall. If I was to upgrade the user experience, not really knowing how to do this, I would have wanted to implement a full screen feature, so the game takes up the entire screen and nothing gets in the way.
+Unfortunately I was able to get my hands on only one tablet device, but I think this following logic would also apply to these devices. Since the game was opened on the browser, and not an app, the tabs of the browsers, even if it was just one, got in the way of the screen and minimized the quality of the experience overall. If I was to upgrade the user experience, not really knowing how to do this, I would have wanted to implement a full screen feature, so the game takes up the entire screen and nothing gets in the way.
 
 #### Samsung Galaxy A13 (Personal Phone)
 
@@ -364,19 +374,14 @@ The gaming performance on this phone were functioning well overall, but again th
 
 As displayed above, this is the phone (browser was Safari), that gave me the most trouble. The issues were multiple, and in the timeframe I had as well as my level of capability, not possible for me to do. For a more detailed breakdown of the individual bugs, please see the unfixed bugs section.
 
-#### IPhone SE 1st Generation
+#### iPad Air 4th Gen
 
-![IPhone SE 1 Block](assets/images/iphone-se-1-block.jpg)
-![IPhone SE 1 Start](assets/images/iphone-se-1-start.jpg)
-![IPhone SE 1 Game](assets/images/iphone-se-1-game.jpg)
-![IPhone SE 1 End](assets/images/iphone-se-1-end.jpg)
+![iPad Air Block](assets/images/ipad-air-block.PNG)
+![iPad Air Start](assets/images/ipad-air-start.PNG)
+![iPad Air Game](assets/images/ipad-air-game.PNG)
+![iPad Air End](assets/images/ipad-air-end.PNG)
 
-#### IPhone SE 2nd Generation 
-
-![IPhone SE 2 Block](assets/images/iphone-se-2-block.jpg)
-![IPhone SE 2 Start](assets/images/iphone-se-2-start.jpg)
-![IPhone SE 2 Game](assets/images/iphone-se-2-game.jpg)
-![IPhone SE 2 End](assets/images/iphone-se-2-end.jpg)
+Luckily the entire design was responsive and the game was functioning the way it was intended to.
 
 ### Desktop Testing 
 
@@ -406,11 +411,13 @@ As one can see above when using my family computer the design and responsiveness
 
 The results here were the same as the other Macbook devices.
 
-#### Apple Mac Mini M4 on 50 inch Screen 
+#### Apple Mac Mini M1 on 50 inch Screen 
 
 ![Mac Mini Start](assets/images/mac-mini-start.png)
 ![Mac Mini Game](assets/images/mac-mini-game.png)
 ![Mac Mini End](assets/images/mac-mini-end.png)
+
+Stylistically everything was displayed the way it was intended. Unfortunately, I did not adjust the collision algorithm for screen of this display size (only adjusting up to xl screen sizes, this one is 1920 x 1080). This results in the collision being a bit to early.
 
 ## Bugs
 
